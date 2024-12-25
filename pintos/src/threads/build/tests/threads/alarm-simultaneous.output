@@ -1,0 +1,29 @@
+qemu-system-x86_64 -device isa-debug-exit -drive file=/tmp/GwDBn0ypT0.dsk,format=raw,index=0,media=disk -m 4 -net none -nographic -monitor null
+c[?7l[2J[0mSeaBIOS (version 1.16.3-debian-1.16.3-2)
+Booting from Hard Disk...
+PPiiLLoo  hhddaa1
+1
+LLooaaddiinngg.......................
+Kernel command line: -q run alarm-simultaneous
+Pintos booting with 3,968 kB RAM...
+367 pages available in kernel pool.
+367 pages available in user pool.
+malloc_init called
+Calibrating timer...  974,848,000 loops/s.
+Boot complete.
+Executing 'alarm-simultaneous':
+(alarm-simultaneous) begin
+(alarm-simultaneous) Creating 3 threads to sleep 5 times each.
+(alarm-simultaneous) Each thread sleeps 10 ticks each time.
+(alarm-simultaneous) Within an iteration, all threads should wake up on the same tick.
+malloc: allocating normal block, size = 120, block_size = 128, malloc_bytes_allocated = 128
+Kernel PANIC at ../../threads/synch.c:211 in lock_acquire(): assertion `!lock_held_by_current_thread (lock)' failed.
+Call stack: 0xc002a387 0 0.
+The `backtrace' program can make call stacks useful.
+Read "Backtraces" in the "Debugging Tools" chapter
+of the Pintos documentation for more information.
+Timer: 180 ticks
+Thread: 150 idle ticks, 30 kernel ticks, 0 user ticks
+Console: 961 characters output
+Keyboard: 0 keys pressed
+Powering off...

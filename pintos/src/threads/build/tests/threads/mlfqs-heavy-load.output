@@ -1,0 +1,37 @@
+qemu-system-x86_64 -device isa-debug-exit -drive file=/tmp/sOBmUlRMRc.dsk,format=raw,index=0,media=disk -m 4 -net none -nographic -monitor null
+c[?7l[2J[0mSeaBIOS (version 1.16.3-debian-1.16.3-2)
+Booting from Hard Disk...
+PPiiLLoo  hhddaa1
+1
+LLooaaddiinngg.......................
+Kernel command line: -q -mlfqs run mlfqs-heavy-load
+Pintos booting with 3,968 kB RAM...
+367 pages available in kernel pool.
+367 pages available in user pool.
+malloc_init called
+Calibrating timer...  1,027,276,800 loops/s.
+Boot complete.
+Executing 'mlfqs-heavy-load':
+(mlfqs-heavy-load) begin
+(mlfqs-heavy-load) Starting heavy load test for MLFQS...
+(mlfqs-heavy-load) After 5 seconds, load average=5.58.
+(mlfqs-heavy-load) After 10 seconds, load average=7.77.
+(mlfqs-heavy-load) After 15 seconds, load average=11.17.
+(mlfqs-heavy-load) After 20 seconds, load average=14.30.
+(mlfqs-heavy-load) After 25 seconds, load average=17.18.
+(mlfqs-heavy-load) After 30 seconds, load average=19.82.
+(mlfqs-heavy-load) After 35 seconds, load average=22.25.
+(mlfqs-heavy-load) After 40 seconds, load average=24.49.
+(mlfqs-heavy-load) After 45 seconds, load average=26.55.
+(mlfqs-heavy-load) After 50 seconds, load average=28.44.
+(mlfqs-heavy-load) After 55 seconds, load average=30.17.
+(mlfqs-heavy-load) After 60 seconds, load average=31.77.
+(mlfqs-heavy-load) Heavy load test finished.
+(mlfqs-heavy-load) PASS
+(mlfqs-heavy-load) end
+Execution of 'mlfqs-heavy-load' complete.
+Timer: 6029 ticks
+Thread: 0 idle ticks, 6029 kernel ticks, 0 user ticks
+Console: 1236 characters output
+Keyboard: 0 keys pressed
+Powering off...
